@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <form>
+        <!-- buttons for number -->
+        <input type="text" id="display" >
+        <br>
+        <input type="button" value="C" id="keys" onclick="addtoscreen('c')">
+        <input type="button" value="^3" id="keys" onclick="power(3)">
+        <input type="button" value="DEL" id="delete" onclick="backspace()">
+
+        <br>
+        <input type="button" value="7" id="keys" onclick="addtoscreen('7')">
+        <input type="button" value="8" id="keys" onclick="addtoscreen('8')">
+        <input type="button" value="9" id="keys" onclick="addtoscreen('9')">
+        <input type="button" value="/" id="keys" onclick="addtoscreen('/')">
+        <br>
+        <input type="button" value="4" id="keys" onclick="addtoscreen('4')">
+        <input type="button" value="5" id="keys" onclick="addtoscreen('5')">
+        <input type="button" value="6" id="keys" onclick="addtoscreen('6')">
+        <input type="button" value="*" id="keys" onclick="addtoscreen('*')">
+        <br>
+        <input type="button" value="1" id="keys" onclick="addtoscreen('1')">
+        <input type="button" value="2" id="keys" onclick="addtoscreen('2')">
+        <input type="button" value="3" id="keys" onclick="addtoscreen('3')">
+        <input type="button" value="-" id="keys" onclick="addtoscreen('-')">
+        <br>
+        <input type="button" value="." id="keys" onclick="addtoscreen('.')">
+        <input type="button" value="0" id="keys" onclick="addtoscreen('0')">
+        <input type="button" value="=" id="keys" onclick="answer()">
+        <input type="button" value="+" id="keys" onclick="addtoscreen('+')">
+        <br>
+
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
